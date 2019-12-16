@@ -92,11 +92,3 @@ pub fn tts_blocking<W: std::io::Write>(srv: &TTSServer, query: &TTSQuery, writer
     res.copy_to(writer)?;
     Ok(())
 }
-
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
